@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <meta name="title" content="{{ site.title }}">
+
+    {% include meta.html %}
+
+  </head>
+  <body>
+    <div class="wrapper">
+
+      {% include navbar.html %}
+
+      <div id="main" class="main">
+        <div class="first home-3"><!-- Hero Section-->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="hero-content wow fadeIn">
+                  <div class="hero-content-inner">
+                    <h4>Exclusively at Grand Bend Motorplex</h4>
+                    <h1>Trackdays at Grand Bend Motorplex</h1>
+                    <p>Were a premium trackday organizer that runs all our days at Grand Bend Motorplex. A welcoming, friendly atmosphere where you can connect and learn from other riders.</p>
+                    <a class="btn-action" href="{{ site.registration }}">Register your 2020 trackday now!</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="hero-img loop-video">
+                  <video class="embed-responsive drone-video" autoplay loop muted>
+                    <source src="assets/video/corner.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+            </div>
+
+            <div class="questions flex-out align-center wow fadeIn">
+              <p>
+              </p>
+            </div>
+          </div>
+
+        </div><!-- Hero End -->
+      </div>
+
+
+      {% include footer.html %}
+
+    </div> <!-- Main -->
+
+
+    <!-- Jquery and Js Plugins -->
+    <script src="assets/js/jquery-2.1.1.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      $('.navbar-nav>li>a').on('click', function(){
+
+        $('.navbar-collapse').collapse('hide');
+
+      });
+    </script>
+  </body>
+</html>
