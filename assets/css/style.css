@@ -1,4 +1,5 @@
 
+
 /*----- 1. Reset.css -----*/
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -3629,4 +3630,13 @@ backface-visibility: hidden;
 
 .style img {
   width:100%;
+}
+
+.partner-img {
+  width: 100px;
+  margin:10px;
+}
+
+.partners {
+  text-align: center;
 }
